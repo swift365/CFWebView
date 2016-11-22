@@ -1,0 +1,16 @@
+PODS:
+  - CFWebView (0.1.0)
+
+DEPENDENCIES:
+  - CFWebView (from `../`)
+
+EXTERNAL SOURCES:
+  CFWebView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CFWebView: 6f69c187a6144beba1f44baac97ecc8ed8fa785c
+
+PODFILE CHECKSUM: 59863ef52478a0405d753b923040def76b4f9fdf
+
+COCOAPODS: 1.1.1

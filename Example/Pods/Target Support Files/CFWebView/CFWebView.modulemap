@@ -1,0 +1,6 @@
+framework module CFWebView {
+  umbrella header "CFWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}
