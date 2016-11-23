@@ -23,7 +23,7 @@ open class CFWebViewController: UIViewController,WKNavigationDelegate,WKUIDelega
      
      - returns: controller实例
      */
-    public init(url:String?,swiped:Bool? = true,callbackHandlerName:[String]? = nil,callbackHandler:((_ handlerName:String,_ sendData:String,_ vc:UIViewController) -> Void)? = nil){
+    public init(url:String?,swiped:Bool? = false,callbackHandlerName:[String]? = nil,callbackHandler:((_ handlerName:String,_ sendData:String,_ vc:UIViewController) -> Void)? = nil){
         self.url = url
         self.swiped = swiped
 
@@ -139,14 +139,24 @@ open class CFWebViewController: UIViewController,WKNavigationDelegate,WKUIDelega
         if webView.canGoBack {
             webView.goBack()
         }else{
-            _ = self.navigationController?.popViewController(animated: true)
+            if let nav = navigationController {
+                _ = nav.popViewController(animated: true)
+                nav.presentingViewController?.dismiss(animated: true, completion: nil)
+            }else{
+                self.dismiss(animated: true, completion: nil)
+            }
         }
     }
     
     func close(){
-        _ = self.navigationController?.popViewController(animated: true)
+        if let nav = navigationController {
+            _ = nav.popViewController(animated: true)
+            nav.presentingViewController?.dismiss(animated: true, completion: nil)
+        }else{
+            self.dismiss(animated: true, completion: nil)
+        }
     }
-   
+    
     override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "title" {
             self.title = webView.title

@@ -20,9 +20,7 @@ class ViewController: UIViewController {
         let webView = CFWebViewController.init(url: "https://www.baidu.com", swiped: false, callbackHandlerName: nil, callbackHandler: nil)
         
         webView.backImage = UIImage(named: "h5_back")
-        webView.isCloseShow = true
-        webView.closeButtonColor = UIColor(white: 0xF4BC2B, alpha: 1)
-        webView.progressColor = UIColor(white: 0xF4BC2B, alpha: 1)
+       
         
         self.navigationController?.pushViewController(webView, animated: true)
     }
