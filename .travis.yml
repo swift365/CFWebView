@@ -1,14 +1,20 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
-osx_image: xcode8
-language: swift
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+language: ruby
+sudo: false
+addons:
+  apt:
+    packages:
+    - libicu-dev
+    - libicu48
+before_install: script/travis/before_install
 script:
-- set -o pipefail && xcodebuild test -workspace Example/CFWebView.xcworkspace -scheme CFWebView-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+  - bundle exec rake
+  - script/licensed verify
+rvm:
+  - 2.0.0
+  - 2.1
+  - 2.2
+notifications:
+  disabled: true
+git:
+  submodules: false
+cache: bundler
