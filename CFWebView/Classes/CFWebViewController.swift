@@ -1,10 +1,11 @@
 //
 //  CFWebViewController.swift
+//  CFWebView
 //
+//  Created by chengfei.heng on 11/22/2016.
+//  Copyright (c) 2016 chengfei.heng. All rights reserved.
 //
-//  Created by 衡成飞 on 10/25/16.
-//  Copyright © 2016 qianwang. All rights reserved.
-//
+
 
 import UIKit
 import WebKit
