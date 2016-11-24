@@ -16,6 +16,7 @@
 		C03A7D7A4A8D6036A7103127C024C578 /* Pods-CFWebView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 454E15CDC2D8DECA599763D9F9893B97 /* Pods-CFWebView_Example-dummy.m */; };
 		D3C893A3B2E1E08F60888B7D82A9B330 /* CFWebView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D59A5F2447A4EBCC84A3F0F06B6D377 /* CFWebView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC9EEEF6AEC4FE0F67C0C07685235D95 /* CFWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015B0FA539A2239D3C08F37E95F0E1D /* CFWebView-dummy.m */; };
+		ECE81F971DE69B9900487707 /* Blank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE81F961DE69B9900487707 /* Blank.swift */; };
 		F383DDCAAD28C6DEBD00CA2909517252 /* Pods-CFWebView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3210D7FD6DF2E6E47C1C646103E9D4A /* Pods-CFWebView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		E1AEE2483D75B50A839296F441E68102 /* Pods-CFWebView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFWebView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3210D7FD6DF2E6E47C1C646103E9D4A /* Pods-CFWebView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CFWebView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E6E411C8F1C720C81BAE899417067E5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE81F961DE69B9900487707 /* Blank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blank.swift; sourceTree = "<group>"; };
 		F7FAF75E92134D90F11860AD5D4645EE /* Pods-CFWebView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFWebView_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				B72AA0B2055D11BAAE320A41AE4AD1E6 /* CFWebViewController.swift */,
+				ECE81F961DE69B9900487707 /* Blank.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE81F971DE69B9900487707 /* Blank.swift in Sources */,
 				DC9EEEF6AEC4FE0F67C0C07685235D95 /* CFWebView-dummy.m in Sources */,
 				79ABCACA5961575852CACBD3C004340C /* CFWebViewController.swift in Sources */,
 			);
