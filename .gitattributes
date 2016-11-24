@@ -1,1 +1,2 @@
-*.rb linguist-language=Java
+Example/Pods/**/**/* linguist-vendored
+*.rb linguist-language=Swift
